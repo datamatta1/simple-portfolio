@@ -1,0 +1,26 @@
+body {
+  margin: 0 auto;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  height: 30vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=style.css.map */
