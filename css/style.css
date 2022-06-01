@@ -10,17 +10,92 @@ a {
 
 .hero-img {
   position: absolute;
-  top: 0;
-  left: 0;
   background-color: yellow;
-  height: 30vh;
+  height: 50vh;
   width: 100%;
   z-index: -1;
+  background-size: cover;
 }
 
 .logo {
   color: black;
   font-weight: bold;
   font-size: 3rem;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 2px solid black;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  height: 120vh;
+  width: 110%;
+  z-index: 999;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: ease-in-out, -webkit-transform 1s;
+  transition: ease-in-out, -webkit-transform 1s;
+  transition: transform 1s, ease-in-out;
+  transition: transform 1s, ease-in-out, -webkit-transform 1s;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  padding-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+nav ul a {
+  color: black;
+  padding: 0.75em 2em;
+  display: block;
+  width: 100%;
+}
+
+nav ul a:hover {
+  background: yellow;
+}
+
+nav .close {
+  display: block;
+  float: right;
+  margin: 2em;
+  width: 2em;
+  height: 4em;
+  padding: 1em;
+}
+
+nav .close:hover {
+  background: yellow;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  display: block;
+  float: right;
+  margin: 2em;
+  width: 2em;
+  height: 4em;
+  padding: 1em;
+}
+
+.open-nav {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 /*# sourceMappingURL=style.css.map */
